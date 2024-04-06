@@ -69,10 +69,10 @@ if st.sidebar.button('Predict'):
     st.write('Predicted Percentage Salary Increase:', predic_salary[0][0]*100)
 
     predic_gold = model_gold.predict(user_data)
-    st.write('Predicted Gold rate:', predic_gold[0][0]*100)
+    st.write('Predicted Gold Returns:', predic_gold[0][0]*100)
 
     predic_bse = model_bse.predict(user_data)
-    st.write('Predicted BSE Return:', predic_bse[0][0]*100)
+    st.write('Predicted BSE Returns:', predic_bse[0][0]*100)
 
     st.markdown("---")
     st.subheader('Expected Financial Outlook for Next Year')
